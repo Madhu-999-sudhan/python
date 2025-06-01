@@ -1,0 +1,88 @@
+4.1
+def gcd(a,b):
+    while b!=0:
+        a,b=b,a%b
+        return a
+num1=int(input("enter the first number:"))
+num2=int(input("enter the second number:"))
+result= gcd(num1,num2)
+print("the gcd of",num1,"and",num2,"is",result)
+
+output:
+enter the first number:18
+enter the second number:36
+the gcd of 18 and 36 is 36
+----------------------------------------------------
+4.2
+def check_even_odd(number):
+    if number %2==0:
+        return"even"
+    else:
+        return"odd"
+num=int(input("enter a number:"))
+result=check_even_odd(num)
+print("the number is:",result)
+
+output:
+enter a number:8
+the number is: even
+---------------------------------------------------
+4.3
+def factorial (n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+for i in range (1,11):
+    result= factorial(i)
+    print("factorail of ",i,"is",result)
+
+output:
+factorail of  1 is 1
+factorail of  2 is 2
+factorail of  3 is 6
+factorail of  4 is 24
+factorail of  5 is 120
+factorail of  6 is 720
+factorail of  7 is 5040
+factorail of  8 is 40320
+factorail of  9 is 362880
+factorail of  10 is 3628800
+--------------------------------------------------
+4.4
+def  factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+num=int(input("enter a number:"))
+result=factorial(num)
+print("the factorial of",num,"is",result)
+                           
+output:
+enter a number:9
+the factorial of 9 is 362880
+--------------------------------------------------
+4.6
+def add(x,y):
+    return x+y
+def subtract(x,y):
+    return x-y
+def multiply(x,y):
+    return(x*y)
+def divide(x,y):
+    return x/y
+num1=int(input("enter the first number:"))
+num2=int(input("enter thde second number:"))
+print("addtion:",add(num1,num2))
+print("subtract:",subtract(num1,num2))
+print("multiply:",multiply(num1,num2))
+print("division:",divide(num1,num2))
+
+output:
+enter the first number:10
+enter thde second number:5
+addtion: 15
+subtract: 5
+multiply: 50
+division: 2.0

@@ -1,0 +1,92 @@
+1)write a python program to arthematic operator without input function
+>>> a=10
+>>> b=5
+>>> print(a+b)
+15
+>>> print(a-b)
+5
+>>> print(a*b)
+50
+>>> print(a/b)
+2.0
+>>> print(a%b)
+0
+>>> print(a//b)
+2
+>>> print(a**b)
+100000
+
+2)
+>>> a=int(input("enter first number"))
+enter first number 10
+>>> b=int(input("enter second number"))
+enter second number 20
+
+>>> print(a+b)
+30
+>>> print(a-b)
+-10
+>>> print(a*b)
+200
+>>> print(a/b)
+0.5
+>>> print(a%b)
+10
+>>> print(a//b)
+0
+>>> print(a**b)
+100000000000000000000
+3)
+>>> a=int(input("enter first number:"))
+enter first number: 10
+>>> b=int(input("enter second number:"))
+enter second number: 20
+>>> temp=a
+>>> a=b
+>>> b=temp
+>>> print("after swapping of two number are:")
+after swapping of two number are:
+>>> print("...............")
+...............
+>>> print("first value is:",a)
+first value is: 20
+>>> print("second value is:",b)
+second value is: 10
+4)
+>>> height=eval(input("enter the height of triangle:"))
+enter the height of triangle:10
+>>> base=eval(input("enter the base of triangle:"))
+enter the base of triangle:25
+>>> area=(0.5)*base*height
+>>> print("the area of triangle:",area)
+the area of triangle: 125.0
+5)
+>>> length=eval(input("enter length:"))
+enter length:10
+>>> breadth=eval(input("enter breadth:"))
+enter breadth:15
+>>> print("peremeter of rectangle is:",2*(length+breadth))
+peremeter of rectangle is: 50
+>>> print("area of rectangle is:",length*breadth)
+area of rectangle is: 150
+6)
+>>> diameter=eval(input("enter the diameter:"))
+enter the diameter:10
+>>> radius=diameter/2
+>>> print("radius of circle is:",radius)
+radius of circle is: 5.0
+7)
+a=25
+b=77
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+print(a!=b)
+
+output:
+False
+True
+False
+True
+True

@@ -1,0 +1,147 @@
+3.1)
+mylist=[]
+n=int(input("enter any numbers:"))
+for x in range(n):
+    num=int(input("enter a number:"))
+    mylist.append(num)
+    print("my updated list is :",mylist)
+
+output:
+enter any numbers:5
+enter a number:10
+my updated list is : [10]
+enter a number:20
+my updated list is : [10, 20]
+enter a number:30
+my updated list is : [10, 20, 30]
+enter a number:40
+my updated list is : [10, 20, 30, 40]
+enter a number:50
+my updated list is : [10, 20, 30, 40, 50]
+---------------------------------------------------------------
+
+3.2)
+l=[10,20,30,"milky",(10+20j),True,1]
+print(l[3])
+print(l[-2])
+print(l)
+l.remove(30)
+print(l)
+
+output
+milky
+
+True
+
+[10, 20, 30, 'milky', (10+20j), True, 1]
+
+[10, 20, 'milky', (10+20j), True, 1]
+
+
+------------------------------------------------------------------
+3.3)
+l=[10,20,30,40,60,True,1]
+print(len(l))
+print(l)
+print(max(l))
+print(min(l))
+
+output:
+7
+
+[10, 20, 30, 40, 60, True, 1]
+
+60
+
+True
+--------------------------------------------------------------
+3.4)
+mylist=[8,2,3,0,7]
+sum=0
+for i in mylist:
+    sum=sum+i
+    print("the sum is:",sum)
+
+output:
+the sum is: 8
+
+the sum is: 10
+
+the sum is: 13
+
+the sum is: 13
+
+the sum is: 20
+
+--------------------------------------------------------------------
+3.5)
+s=input("enter any string:")
+print(s.split())
+
+output:
+enter any string:python is very easy learning program
+['python', 'is', 'very', 'easy', 'learning', 'program']
+-----------------------------------------------------------------------------
+3.6)
+n=int(input("enter the value of n:"))
+mylist=[]
+for i in range(n):
+    num=int(input("enter a number :"))
+    mylist.append(num)
+    print("even numbers are:")
+    print("[",end="")
+    for num in mylist:
+        if num%2==0:
+            print(num,end=",")
+    print("]")
+
+output:
+enter the value of n:5
+
+enter a number :10
+
+even numbers are:
+[10,]
+
+enter a number :20
+
+even numbers are:
+[10,20,]
+
+enter a number :25
+
+even numbers are:
+[10,20,]
+
+enter a number :35
+
+even numbers are:
+[10,20,]
+
+enter a number :30
+
+even numbers are:
+[10,20,30,]
+
+------------------------------------------------------------------------
+3.7)
+list=[10,20,30,40,50]
+print(list)
+x= list.copy()
+print(x)
+list.pop(3)
+print(list)
+del  list[2]
+print(list)
+list.reverse()
+print(list)
+list.clear()
+print(list)
+      
+output:
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+[10, 20, 30, 50]
+[10, 20, 50]
+[50, 20, 10]
+[]
