@@ -1,0 +1,74 @@
+7.1)
+def fibonacci(Number): 
+if(Number == 0): 
+return 0 
+elif Number == 1: 
+return 1 
+else: 
+return fibonacci(Number - 2) + fibonacci(Number - 1) 
+Number = int(input("Please Enter the Fibonacci Number Range = ")) 
+Sum = 0 
+for Num in range(Number): 
+print(fibonacci(Num), end = ' ') 
+Sum = Sum + fibonacci(Num) 
+print("\nThe Sum of Fibonacci Series Numbers = %d" %Sum)
+
+output:
+Please Enter the Fibonacci Number Range = 8 
+0 1 1 2 3 5 8 13  
+The Sum of Fibonacci Series Numbers = 33 
+---------------------------------------------------------------------------------------------------
+7.2)def factorial(n): 
+if n == 0: 
+return 0 
+if n == 1: 
+return 1 
+else: 
+return n * factorial(n-1) 
+n = int(input('Enter any number :')) 
+print('Factorial value of',n ,'is :',factorial(n))
+
+output:
+
+Enter any number :5 
+Factorial value of 5 is : 120 
+--------------------------------------------------------------------------------------------------
+7.3)
+def pal(s): 
+s = s.lower() 
+if len(s) <= 1: 
+return True   
+elif s[0] != s[-1]: 
+return False 
+else: 
+return pal(s[1:-1]) 
+myinput = input("Enter a string: ") 
+if pal(myinput): 
+print(f"'{myinput}' is a palindrome.") 
+else: 
+print(f"'{myinput}' is not a palindrome.")
+
+output:
+Enter a string: MADAM 
+'MADAM' is a palindrome. 
+-----------------------------------------------------------------------------------------------------
+7.4)
+def gcd(a, b): 
+if b == 0: 
+return a 
+else: 
+return gcd(b, a % b) 
+x = input("Enter the first integer: ") 
+y = input("Enter the second integer: ") 
+if x.isdigit() and y.isdigit(): 
+a = int(x) 
+b = int(y) 
+result = gcd(a, b) 
+print(f"The GCD of {a} and {b} is:", result) 
+else: 
+print("Please enter valid integers.")
+
+output:
+Enter the first integer: 36 
+Enter the second integer: 18 
+The GCD of 36 and 18 is: 18
