@@ -1,0 +1,74 @@
+8.1)
+import random
+random_number=random.randint(1,10)
+print("Random number:",random_number)
+
+output:
+Random number: 7
+----------------------------------------------------
+8.2)
+import datetime
+current_datetime=datetime.datetime.now()
+print("current date and time:",current_datetime)
+
+output:
+current date and time: 2025-06-04 11:44:17.949930
+---------------------------------------------------
+8.3)
+import math
+number=25
+sqrt=math.sqrt(number)
+print("square root:",sqrt)
+
+output:
+square root: 5.0
+---------------------------------------------------
+8.4)
+import math
+factorial =math.factorial(5)
+print("factorial:",factorial)
+
+output:
+factorial: 120
+---------------------------------------------------
+8.5)
+file_path="example.txt"
+with open(file_path,"w")as file:
+    file.write ("hello world!")
+with open(file_path,"r")as file:
+    content = file.read()
+    print("file content:",content)
+
+output:
+file content: hello world!
+---------------------------------------------------
+8.6)
+import string
+text="hello,world!"
+uppercase_text=text.upper()
+print("upper case text:",uppercase_text)
+
+output:
+upper case text: HELLO,WORLD!
+----------------------------------------------------
+8.7)
+import secrets
+random_number=secrets.randbelow(10)+1
+print("crytographically secure random number:",random_number) 
+
+output:
+crytographically secure random number: 1
+----------------------------------------------------
+8.8)
+import platform
+system_name=platform.system()
+node_name=platform.node()
+processor_name=platform.processor()
+print("system name:",system_name)
+print("node name:",node_name)
+print("processor name:",processor_name)
+
+output:
+system name: Windows
+node name: MIC
+processor name: Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
